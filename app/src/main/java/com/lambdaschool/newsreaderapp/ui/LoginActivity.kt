@@ -16,6 +16,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        // Add a simple listener to the sign in button to launch a second activity
         btn_sign_in.setOnClickListener {
             val signInIntent = Intent(this, ListActivity::class.java)
             startActivityForResult(signInIntent,REQUEST_NEWS_GET)
